@@ -1,18 +1,20 @@
 package main
 
-import (
-	"fmt"
-	"os"
-)
+import "fmt"
 
 func main() {
-	fmt.Print("Enter a Number: ")
-	var input float32
-	_, err := fmt.Scanf("%f", &input)
-	if err != nil {
-		fmt.Println("Invalid input")
-		os.Exit(1)
+	nilai := 90
+
+	switch nilai {
+	case 100:
+		fmt.Println("Mantep")
+	case 90:
+		fmt.Println("Sabi")
+	case 80:
+		fmt.Println("Ok Lah")
+	case 70:
+		fmt.Println("Belajar lah")
+	default:
+		fmt.Println("Belajar lagi")
 	}
-	output := input * 2
-	fmt.Println(output)
 }
