@@ -1,0 +1,10 @@
+go 1.21.0
+
+use (
+	./src
+	./src/cmd
+	./src/cmd/objdump/testdata/testfilenum
+	./src/crypto/internal/bigmod/_asm
+	./src/crypto/internal/edwards25519/field/_asm
+	./src/myapp
+)
